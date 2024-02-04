@@ -1,0 +1,183 @@
+@import './themes.css';
+
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+    border: 2px solid red;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: var(--grey-8);
+}
+.enüst{
+    text-align: center;
+    background-color: olive;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: var(--shadow-dark);
+    border-radius: 1rem;
+    /* display: flex; */
+    /* border: 2px solid rgb(143, 236, 4); */
+    
+   
+
+
+}
+.enüst button{
+    background-color: rgb(200, 192, 192);
+    padding: .5rem;
+    border-radius: 1rem;
+    /* border: 1px solid yellow; */
+    box-shadow: var(--shadow-dark);
+    border: 2px solid rgb(143, 236, 4);
+}
+:hover .enüst button{
+    cursor: pointer;
+   
+}
+.üst{
+    border: 2px solid rgb(218, 210, 210);
+    display: flex;
+    align-items: center;
+    background-color:rgb(238, 237, 189);
+    font-family: var(  --ff--ff-roboto);
+    font-size: var( --fs-md);
+    gap: 1.5rem;
+    margin: 1rem;
+    color: rgb(10, 10, 10);
+    box-shadow: var(--shadow-dark);
+    border-radius: 1rem;
+    /* background-image: url(../img/karbrn.jpg);
+    background-size:50%; */
+}
+.üst section{
+    /* border: 2px solid rgb(221, 255, 0); */
+    box-shadow: 5px rgb(0, 0, 0);
+    border-radius: 1rem;
+   
+    /* justify-content: center; */
+    flex: 1 ;
+    /* text-align: center; */
+    
+}
+/* .üst section img{
+    box-shadow: 5px rgb(0, 0, 0);
+    border-radius: 10rem;
+    margin: auto;
+} */
+.üst .logo{
+    /* border: 2px solid rgb(0, 17, 255); */
+    background-color:inherit;
+    text-align: center;
+    font-size: xx-large;
+    box-shadow: var(--shadow-dark);
+    border-radius: 1rem;
+    color:rgb(247, 5, 5)
+}
+.üst .imglogo{
+    /* border: 2px solid pink; */
+}
+.orta{
+    display: flex;
+    background-color: hwb(0 91% 4% / 0.991);
+    border-radius: 2px;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(27, 3, 246);
+    font-size: large;
+    margin: 1rem;
+    border-radius: 1.5rem;
+   
+}
+.orta h2,h3,p{
+    font-family: var(  --ff-yeon);
+  align-items: center;
+    
+}
+
+.orta section{
+    /* flex: 1; */
+}
+.orta .serkan img{
+    box-shadow: var(--shadow-dark);
+    border-radius: 5rem;
+}
+.ortalt{
+    display: flex;
+    gap: 1rem;
+    background-color: rgb(219, 236, 236);
+    align-items: center;
+    color: rgb(27, 3, 246);
+    font-size: large;
+    margin: 1rem;
+    border-radius: 1.5rem;
+}
+.ortalt .aliaga img{
+    box-shadow: var(--shadow-dark);
+    border-radius: 5rem;
+}
+.ortalt h2,p{
+    font-family: var(  --ff-yeon);
+    align-items: center;
+}
+.about{
+    background-color: rgb(219, 176, 146);
+    display: flex;
+    align-items: center;
+    color: rgb(27, 3, 246);
+    font-size: larger;
+    margin: 1rem;
+    border-radius: 1.5rem;
+
+}
+.about video{
+    box-shadow: var(--shadow-dark);
+    border-radius: 5rem;
+}
+.cemkaraca{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(234, 231, 202);
+    color: rgb(27, 3, 246);
+    font-size: larger;
+    margin: 1rem;
+    border-radius: 1.5rem;
+}
+.cemkaraca article{
+    margin: 1rem;
+}
+.cemkaraca video{
+    box-shadow: var(--shadow-dark);
+    border-radius: 5rem;
+}
+
+
+
+
+@media screen and (max-width:700px){
+    .enüst{
+        background-color: brown;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .enüst button{
+        margin: 5px ;
+      
+        min-width:50%;
+        /* text-align: center; */
+        /* justify-content: center;
+        align-items: center; */
+     
+       
+    }
+    .üst{
+        flex-direction: column;
+    }
+    .orta, .ortalt,.cemkaraca,.about{
+        flex-direction: column;  
+    }
+}
